@@ -6,7 +6,7 @@ from app.middleware import RequestCountMiddleware, CorrelationIDMiddleware
 from app.metrics import REQUEST_COUNT_2XX, REQUEST_COUNT_3XX, REQUEST_COUNT_4XX, REQUEST_COUNT_5XX, measure_latency
 from app.model.meta import Base
 from config.settings import settings
-from prometheus_client import generate_latest, CONTENT_TYPE_LATEST
+from prometheus_client import CONTENT_TYPE_LATEST
 import uvicorn
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
 from sqlalchemy.orm import sessionmaker
